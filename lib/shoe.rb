@@ -13,7 +13,13 @@ BRANDS = []
     puts "Your shoe is as good as new!"
   end
 def brand=(brand)
-  @brand = brand
-  BRANDS << brand 
-end 
+    @brand = brand
+    if BRANDS.member? brand
+      BRANDS
+    else
+      BRANDS << brand
+    end
+  end
+end
+
 end
