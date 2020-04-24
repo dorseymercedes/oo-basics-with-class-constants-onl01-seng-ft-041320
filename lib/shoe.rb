@@ -12,10 +12,9 @@ BRANDS = []
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-def brand=(brand)
+def initialize(brand)
     @brand = brand
-    if BRANDS.member? brand
-      BRANDS
+    if BRANDS.include?(brand)
     else
       BRANDS << brand
     end
