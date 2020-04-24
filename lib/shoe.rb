@@ -20,5 +20,6 @@ def brand=(brand)
       BRANDS << brand
     end
   end
+  
 
 end
